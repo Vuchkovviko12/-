@@ -1,0 +1,175 @@
+
+/* Основни стилове */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Контейнер за приложението */
+#app {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Скриване на секции, когато не са активни */
+.section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Заглавия */
+h1 {
+    color: #4CAF50;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2E86C1;
+    margin-bottom: 15px;
+}
+
+/* Полета за вход */
+input, select, textarea {
+    margin: 10px 0;
+    padding: 15px;
+    width: calc(100% - 30px);
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background: #f9f9f9;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Бутоните */
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    background: #4CAF50;
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2em;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+button:hover {
+    background: #45A049;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
+
+/* Стилове за таблото на ученика и учителя */
+#student-dashboard, #teacher-dashboard {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#student-dashboard p,
+#teacher-dashboard p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #34495e;
+}
+
+/* Карти за учениците */
+.student-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Карти за домашни */
+.homework-item, .submission-item {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.homework-item h4, .submission-item h4 {
+    color: #2E86C1;
+    margin: 0 0 10px;
+}
+
+.homework-item button, .submission-item button {
+    background: #3498DB;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.homework-item button:hover, .submission-item button:hover {
+    background: #2980B9;
+}
+
+/* Лидерборд */
+#leaderboard {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.leaderboard-item {
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стикери и баджове */
+.sticker-item, .badge-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background: #FFD700;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    text-align: center;
+}
